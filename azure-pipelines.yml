@@ -14,15 +14,16 @@ steps:
   inputs:
     FodConnection: 'Keyruh'
     ReleaseOptions: '1'
-    ApplicationName: 'Wrokflow Driven'
+    ApplicationName: 'driven'
     BusinessCriticality: '1'
-    Owner: 21188
+    ReleaseName: 'xxx'
+    SDLCStatus: '2'
+    Owner: 2118
     AssessmentTypeId: 149
-    EntitlementId: 3614
+    EntitlementId: 3462
     EntitlementFrequencyType: 'Subscription'
     OverrideScanSettings: '1'
     ScanType: '2'
     TimeZone: 'Dateline Standard Time'
     EnvironmentFacing: '0'
-    ScanPolicyWorkflow: 'CriticalsAndHighs'
     PolicyFailAction: '1'
