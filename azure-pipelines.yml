@@ -18,7 +18,7 @@ steps:
     BusinessCriticality: '1'
     ReleaseName: 'xxx'
     SDLCStatus: '2'
-    Owner: 2118
+    Owner: 21188
     AssessmentTypeId: 149
     EntitlementId: 3462
     EntitlementFrequencyType: 'Subscription'
