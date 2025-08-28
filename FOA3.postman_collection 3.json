@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "37f51f9e-0803-4b16-a3d6-55114ba194af",
+		"name": "FOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9750994"
+	},
+	"item": [
+		{
+			"name": "Create_Event",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Create",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfoodsplatform.sit.marksandspencer.app",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"templateId\": \"FOA\",\r\n    \"eventId\": null,\r\n    \"dataFields\": [\r\n        {\r\n            \"fieldId\": \"foaEventType\",\r\n            \"fieldValue\": \"National\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaCountry\",\r\n            \"fieldValue\": [\r\n                \"Scotland\",\r\n                \"Republic of Ireland\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventName\",\r\n            \"fieldValue\": \"event5\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaNationalEventCode\",\r\n            \"fieldValue\": \"ARMISTICE DAY\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventDate\",\r\n            \"fieldValue\": [\r\n                \"23/02/2022\",\r\n                \"24/02/2022\"\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/createEvent?x-authentication=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"createEvent"
+					],
+					"query": [
+						{
+							"key": "x-authentication",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Event",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Delete",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					},
+					{
+						"key": "x-authentication",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/deleteEvent?eventId=62a1f689d6437252b7072673",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"deleteEvent"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "62a1f689d6437252b7072673"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Event",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Update",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					},
+					{
+						"key": "x-authentication",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"templateId\": \"FOA\",\r\n    \"eventId\": \"62a1f0fcd6437252b7072670\",\r\n    \"dataFields\": [\r\n        {\r\n            \"fieldId\": \"foaEventType\",\r\n            \"fieldValue\": \"National\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaCountry\",\r\n            \"fieldValue\": [\r\n                \"Scotland\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventName\",\r\n            \"fieldValue\": \"test event\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaNationalEventCode\",\r\n            \"fieldValue\": \"2ND JANUARY\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventDate\",\r\n            \"fieldValue\": [\r\n                \"09/06/2022\",\r\n                \"10/06/2022\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"foaImpactDate\",\r\n            \"fieldValue\": [\r\n                \"16/06/2022\",\r\n                \"17/06/2022\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventCreatedBy\",\r\n            \"fieldValue\": \"deepali.nayak@mnscorp.net\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventCreatedOn\",\r\n            \"fieldValue\": \"09/06/2022 13:09:16\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/updateEvent",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"updateEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View_Event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Read",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					},
+					{
+						"key": "x-authentication",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"templateId\": \"FOA\",\r\n    \"eventId\": \"622f6363b9cafe3b35eec7a5\",\r\n    \"dataFields\": [\r\n        {\r\n            \"fieldId\": \"foaEventType\",\r\n            \"fieldValue\": \"Local\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventName\",\r\n            \"fieldValue\": \"Dog Show13e3\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaLocalEventCode\",\r\n            \"fieldValue\": \"Dog Show 2021\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventDate\",\r\n            \"fieldValue\": [\r\n                \"22/03/2022\",\r\n                \"23/03/2022\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"foaPerspective\",\r\n            \"fieldValue\": \"Linear\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaLinearStoreLocation\",\r\n            \"fieldValue\": [\r\n                \"0307\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventCreatedBy\",\r\n            \"fieldValue\": \"haseena.khader@mnscorp.net\"\r\n        },\r\n        {\r\n            \"fieldId\": \"foaEventCreatedOn\",\r\n            \"fieldValue\": \"14/03/2022 15:46:43\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/getEvent?eventId=62a1f0fcd6437252b7072670",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"getEvent"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "62a1f0fcd6437252b7072670"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch_Event",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Read",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					},
+					{
+						"key": "x-authentication",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"page\": {\r\n\"page\": 0,\r\n\"size\": 20,\r\n\"sort\": {\r\n\"by\": \"ASC\",\r\n\"orderBy\": \"startDate\"\r\n}\r\n},\r\n\"filter\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/getAllEvent",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"getAllEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DataStore",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Read",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					},
+					{
+						"key": "x-authentication",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"serviceId\":\"LOCATION\",\"query\":\"lon\",\"dependOnValue\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/dataStore",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"dataStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOptionId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Read",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"serviceId\":\"LOCATION\",\"query\":\"lon\",\"dependOnValue\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/getOption?optionId=foaEventType&x-authentication=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"getOption"
+					],
+					"query": [
+						{
+							"key": "optionId",
+							"value": "foaEventType"
+						},
+						{
+							"key": "x-authentication",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getForm",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "x-acl-required",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "x-module",
+						"value": "onemnsfood",
+						"type": "default"
+					},
+					{
+						"key": "x-object",
+						"value": "FSP FOA Events",
+						"type": "default"
+					},
+					{
+						"key": "x-operation",
+						"value": "Update",
+						"type": "default"
+					},
+					{
+						"key": "Origin",
+						"value": "https://onemandsfood.foods.apps.mnscorpdev.net",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"serviceId\":\"LOCATION\",\"query\":\"lon\",\"dependOnValue\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mns-prod-test.apigee.net/event-service/foa/v1/getForm?formId=FOA&x-authentication=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow",
+					"protocol": "https",
+					"host": [
+						"mns-prod-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"event-service",
+						"foa",
+						"v1",
+						"getForm"
+					],
+					"query": [
+						{
+							"key": "formId",
+							"value": "FOA"
+						},
+						{
+							"key": "x-authentication",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJkMzI1NmJlMS02NDVmLTRhY2EtOGIxNC02ODk2ZDVhNTBmNDMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vYmQ1YzY3MTMtNzM5OS00YjMxLWJlNzktNzhmMmQwNzhlNTQzL3YyLjAiLCJpYXQiOjE2NTUyOTY4MzYsIm5iZiI6MTY1NTI5NjgzNiwiZXhwIjoxNjU1MzAwNzM2LCJuYW1lIjoiU2FuYWRoeWEsIFByaXlhbmthIiwibm9uY2UiOiJiOTU4Yzg3Yy0zMmVkLTRiYzYtYWQyZi1jOTY2MWMzNDMxNDEiLCJvaWQiOiJkOWMxNDc5Yi0wNzMzLTQ5YjgtOTQ4OS0zNWNhZDY5ODNmYzciLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJQcml5YW5rYS5TYW5hZGh5YUBtbnNjb3JwLm5ldCIsInJoIjoiMC5BWHNBRTJkY3ZabHpNVXUtZVhqeTBIamxRLUZySmROZlpNcEtpeFJvbHRXbEQwTUNBTlUuIiwic3ViIjoiWUJLaVV6cll5eFpQNWVfV3RlVi1hdTdEb2ZJOGhjY2VOWWRsY2hWckRNVSIsInRpZCI6ImJkNWM2NzEzLTczOTktNGIzMS1iZTc5LTc4ZjJkMDc4ZTU0MyIsInV0aSI6InpPd0VCUzJhYWttMm9hdV9UNzFYQUEiLCJ2ZXIiOiIyLjAifQ.J4dXTvvo83DyOkMH49mPolQoj4nHWrad_McoTh5BugHJ6-FpYeU-o3LQk8x070a0GjnoGRkjstZveCSvTWWKkRlEOoe6mdB-eST9msKL4oHdx8bzvxchXMuU72rpefIqJQazDgETwtHpddm7sGWhuY6GmXOkmfLHbaIEW42Xyzs8mDeb_5Pu9UXYRNM0o6VkIvU8SOUfykJ1ezJmjvuHPFkm0ycx-bO3TXzttNrvfiPg5gDFUyFRO6JOfzcDkQ1x_S11CXI9T3tJrG-1kGYAxV-pWZeDZn6sONWGUMkDC9Rylq4jz-3fTpQAhUndTLtanua0CTMKGjY9v64KCa95ow"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
